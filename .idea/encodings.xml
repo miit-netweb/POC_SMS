@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Auth-Server/Auth-Server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JWT-Server/JWT-Server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/currenency-converter/currenency-converter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/currenency-exchange/currenency-exchange/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/limits/limits/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/naming-server/naming-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config-server/spring-cloud-config-server/src/main/java" charset="UTF-8" />
+  </component>
+</project>
