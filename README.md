@@ -46,11 +46,12 @@ The microservices architecture is designed as follows:
    
 2. **Auth Server**:
    - Validates subscriber details.
+   - Checks partner number and secrets in database.
    - If valid, requests JWT token from JWT Server.
    - Returns JWT token to the client.
 
 3. **JWT Server**:
-   - Generates a new JWT token if the token is expired.
+   - Generates a new JWT token if the token is expired or does not exist for the corresponding partner number.
    - Returns the existing token if still valid.
 
 
