@@ -25,7 +25,7 @@ The microservices architecture is designed as follows:
 1. **Eureka Server**: 
    - Responsible for service discovery. All microservices register here.
    
-2. **API Gateway **:
+2. **API Gateway**:
    - Acts as a single entry point for all requests from clients.
    - Routes requests to appropriate microservices based on the URL.
 
