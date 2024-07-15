@@ -1,4 +1,4 @@
-# Subscriber Management System (SMS) POC Project
+# (SMS) POC Project
 
 This project is a Proof of Concept (POC) for SMS built on Spring Boot and microservice architecture. 
 It includes an Eureka server, API gateway, authentication server, and JWT server.
