@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="currenency-exchange" />
         <module name="currenency-converter" />
+        <module name="Email-Notification" />
         <module name="Auth-Server" />
         <module name="spring-cloud-config-server" />
         <module name="JWT-Server" />
@@ -20,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Auth-Server" options="-parameters" />
+      <module name="Email-Notification" options="-parameters" />
       <module name="JWT-Server" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="currenency-converter" options="-parameters" />

@@ -12,6 +12,11 @@ public class PartnerCredential {
     public PartnerCredential() {
     }
 
+    public PartnerCredential(String uuid, String secret) {
+        partnerUuid=uuid;
+        partnerSecret=secret;
+    }
+
     public String getPartnerUuid() {
         return partnerUuid;
     }

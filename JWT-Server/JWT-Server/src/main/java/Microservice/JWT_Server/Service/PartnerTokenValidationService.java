@@ -15,12 +15,9 @@ public class PartnerTokenValidationService {
 
     public PartnerTokenValidation isPartnerExpired(long partnerNumber){
         Optional<PartnerTokenValidation> partner = partnerTokenValidationRepository.findById(partnerNumber);
-        //New request for the partner
         if(partner.isEmpty()) return null;
-
         final LocalDateTime expiry = partner.get().getExpiry();
         if(expiry.isBefore(LocalDateTime.now())) return null;
-
         return partner.get();
     }
 

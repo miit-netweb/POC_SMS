@@ -5,6 +5,7 @@ public class SubscriberData {
     private String firstName;
     private String lastName;
     private Long phoneNumber;
+    private String email;
     private BillingDetail billingDetail;
 
     public SubscriberData() {
@@ -16,6 +17,14 @@ public class SubscriberData {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getLastName() {

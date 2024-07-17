@@ -18,6 +18,13 @@ public class PartnerDetail {
     public PartnerDetail() {
     }
 
+    public PartnerDetail(long partnerNumber, String partnerName, String partnerUuid, String partnerSecret) {
+        this.partnerNumber = partnerNumber;
+        this.partnerName = partnerName;
+        this.partnerUuid = partnerUuid;
+        this.partnerSecret = partnerSecret;
+    }
+
     public long getPartnerNumber() {
         return partnerNumber;
     }

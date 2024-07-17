@@ -30,6 +30,10 @@ public class AuthService {
     @Autowired
     private JwtService jwtService;
 
+    public AuthService(PartnerRepository partnerRepository) {
+        this.partnerRepository = partnerRepository;
+    }
+
     public static boolean isAlphaNumeric(String str) {
         String regex = "^[a-zA-Z0-9]*$";
         return str.matches(regex);
@@ -153,13 +157,13 @@ public class AuthService {
         } else if (!partnerDetail.getPartnerUuid().equals(user.getPartnerCredential().getPartnerUuid())) {
             ResponseDto responseDto = new ResponseDto();
             responseDto.setCode(400);
-            responseDto.setMessage("Partner number is invalid");
+            responseDto.setMessage("Partner number is invalid,wrong UUID");
             return responseDto;
         }
         else if (!partnerDetail.getPartnerSecret().equals(user.getPartnerCredential().getPartnerSecret())) {
             ResponseDto responseDto = new ResponseDto();
             responseDto.setCode(400);
-            responseDto.setMessage("Partner number is invalid");
+            responseDto.setMessage("Partner number is invalid,wrong Secret Key");
             return responseDto;
         }
             return null;
